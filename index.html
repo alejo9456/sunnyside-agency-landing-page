@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body class="min-h-screen font-barlow">
+
+  <header class="flex flex-col text-white py-4 px-4 h-[32rem] sm:h-[50rem] bg-header-mobile sm:bg-header-desktop bg-center bg-cover bg-no-repeat w-full">
+    <nav class="flex justify-between relative items-center">
+      <figure>
+        <img src="./images/logo.svg" alt="logo">
+      </figure>
+      <img class="md:hidden" src="./images/icon-hamburger.svg" alt="icon hamburger">
+
+      <div class="md:hidden w-full flex flex-col items-end justify-center top-10 absolute">
+        <div class="menu-origin" aria-label="menu-origin"></div>
+        <ul class="bg-white text-dark-grayish-blue flex flex-col items-center justify-center top-10 w-full  py-4 gap-4">
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li class="text-very-dark-desaturated-blue font-fraunces rounded-3xl bg-yellow px-8 py-4 uppercase">Contact</li>           
+        </ul>
+      </div>
+      <ul class="hidden md:flex md:justify-between md:items-center gap-8">
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li class="text-very-dark-desaturated-blue font-fraunces rounded-3xl bg-white px-8 py-4 uppercase">Contact</li>
+      </ul>
+    </nav>
+    <div class=" text-2xl sm:text-5xl md:text-7xl absolute inset-0 flex flex-col justify-center items-center gap-4 md:gap-8 lg:gap-12 top-1/2 transform -translate-y-1/2">
+      <h1 class="">We are creatives</h1>
+      <img class="animate-bounce h-10 md:h-24 lg:h-44" src="./images/icon-arrow-down.svg" alt="icon arrow down">
+    </div>
+  </header> 
+  <main>
+    <section class="grid grid-cols-1 md:grid-cols-2">
+      <article class="flex flex-col h-full justify-around px-[20%] py-[10%] gap-8 lg:gap-0">
+        <h2 class="text-4xl font-fraunces font-extrabold"> Transform your brand</h2>
+        <p class="text-very-dark-grayish-blue">We are a full-service creative agency specializing in helping brands grow fast. 
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <span>
+          <a class="relative inline-block font-fraunces uppercase" href="">
+            <span class="absolute bottom-0 left-0 rounded-2xl w-full h-2 bg-opacity-50 bg-yellow hover:bg-yellow transition"></span>
+            Learn more
+          </a>
+        </span>
+      </article>
+      <img class="md:hidden h-full w-full" src="./images/mobile/image-transform.jpg" alt="image-transform-mobile">
+      <img class="hidden md:block h-full w-full" src="./images/desktop/image-transform.jpg" alt="image-transform-desktop">
+      <img class="md:hidden h-full w-full" src="./images/mobile/image-stand-out.jpg" alt="image-stand-out-mobile">
+      <img class="hidden md:block h-full w-full" src="./images/desktop/image-stand-out.jpg" alt="image-stand-out-desktop">
+      <article class="flex flex-col h-full justify-around px-[20%] py-[10%] gap-8 lg:gap-0">
+        <h2 class="text-4xl font-fraunces font-extrabold">Stand out to the right audience</h2>
+        <p class="text-very-dark-grayish-blue">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <span>
+          <a class="inline-block relative font-fraunces uppercase" href="">
+            <span class="absolute bottom-0 left-0 rounded-2xl w-full h-2 bg-opacity-50 bg-soft-red hover:bg-soft-red transition"></span>
+            Learn more
+          </a>
+        </span>
+      </article>
+      <article class="text-dark-desaturated-cyan relative flex flex-col justify-end h-full gap-4">
+        <img class="hidden md:block w-full h-full" src="./images/desktop/image-graphic-design.jpg" alt="graphic design desktop">
+        <img class="md:hidden w-full h-full" src="./images/mobile/image-graphic-design.jpg" alt="graphic design mobile">
+        <div class="absolute  px-[15%] py-[10%] gap-4 flex flex-col">
+          <h2 class="font-fraunces text-3xl">Graphic design</h2>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+      </article>
+      <article class="text-dark-blue relative flex flex-col justify-end h-full gap-4">
+        <img class="hidden md:block w-full h-full" src="./images/desktop/image-photography.jpg" alt="photography desktop">
+        <img class="md:hidden w-full h-full" src="./images/mobile/image-photography.jpg" alt="photography mobile">
+        <div class="absolute px-[15%] py-[10%] gap-4 flex flex-col">
+          <h2 class="font-fraunces text-3xl">Photography</h2>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- testimonials -->
+    <section class="px-4 md:px-24 py-24 grid grid-cols-1 justify-items-center items-center text-dark-desaturated-cyan">
+      <h2 class="font-fraunces font-extrabold uppercase mb-20 text-2xl text-grayish-blue">Client testimonials</h2>
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-4 px-10">
+        <article class="flex flex-col justify-center items-center gap-10">
+          <img class="rounded-full" src="./images/image-emily.jpg" alt="client emily">
+          <div>
+            <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          </div>
+          <div class="not-italic">
+            <h3 class="font-fraunces font-bold text-very-dark-desaturated-blue  flex flex-col items-center">Emily R.<span class="font-barlow text-grayish-blue">Marketing Director</span></h3>
+          </div>
+        </article>
+        <article class="flex flex-col justify-center items-center gap-10">
+          <img class="rounded-full" src="./images/image-thomas.jpg" alt="client thomas">
+          <div>
+            <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          </div>
+          <div>
+            <h3 class="font-fraunces font-bold text-very-dark-desaturated-blue flex flex-col items-center">Thomas S.<span class="font-barlow text-grayish-blue">Chief Operating Officer</span></h3>
+          <div>
+        </article>
+        <article class="flex flex-col justify-center items-center gap-10">
+          <img class="rounded-full" src="./images/image-jennie.jpg" alt="client jennie">
+          <div>
+            <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          </div>
+          <div>
+            <h3 class="font-fraunces font-bold text-very-dark-desaturated-blue flex flex-col items-center">Jennie F.<span class="font-barlow text-grayish-blue">Business Owner</span></h3>
+          </div>
+        </article>
+      </section>
+    </section>
+    <!-- gallery -->
+    <section class="grid grid-cols-2 md:grid-cols-4">
+      <img class="hidden md:block h-full w-full" src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk bottles desktop">
+      <img class="md:hidden h-full w-full" src="./images/mobile/image-gallery-milkbottles.jpg" alt="milk bottles mobile">
+      <img class="hidden md:block h-full w-full" src="./images/desktop/image-gallery-orange.jpg" alt="orange desktop">
+      <img class="md:hidden h-full w-full" src="./images/mobile/image-gallery-orange.jpg" alt="orange mobile">
+      <img class="hidden md:block h-full w-full" src="./images/desktop/image-gallery-cone.jpg" alt="cone desktop">
+      <img class="md:hidden h-full w-full" src="./images/mobile/image-gallery-cone.jpg" alt="cone mobile">
+      <img class="hidden md:block h-full w-full" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes desktop">
+      <img class="md:hidden h-full w-full" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes mobile">
+    </section>
+
+  </main>
+
+  <footer class="bg-dark-moderate-cyan bg-opacity-60 grid grid-cols-1 items-center justify-items-center h-72">
+
+    <img src="./images/logo-with-color.svg" alt="logo en footer">
+    <ul class="flex text-dark-desaturated-cyan  gap-4">
+      <li class="hover:text-white cursor-pointer">About</li>
+      <li class="hover:text-white cursor-pointer">Service</li>
+      <li class="hover:text-white cursor-pointer">Projects</li>
+    </ul>
+
+    <ul class="flex items-center gap-4">
+      <li class="cursor-pointer hover:filter hover:invert hover:brightness-0">
+        <img class="hover:filter hover:invert-100" src="./images/icon-facebook.svg" alt="facebook">
+      </li>
+      <li class="cursor-pointer hover:filter hover:invert hover:brightness-0">
+        <img class="hover:filter hover:invert-100" src="./images/icon-instagram.svg" alt="instagram">
+      </li>
+      <li class="cursor-pointer hover:filter hover:invert hover:brightness-0">
+        <img class="hover:filter hover:invert-100" src="./images/icon-twitter.svg" alt="twitter">
+      </li>
+      <li class="cursor-pointer hover:filter hover:invert hover:brightness-0">
+        <img class="" src="./images/icon-pinterest.svg" alt="pinterest">
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
